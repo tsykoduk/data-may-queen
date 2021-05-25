@@ -1,0 +1,2 @@
+class SeaShanty < ApplicationRecord
+end

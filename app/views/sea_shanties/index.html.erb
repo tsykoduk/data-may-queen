@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ruby on Rails</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <style type="text/css" media="screen" charset="utf-8">
+    body {
+      font-family: Georgia, sans-serif;
+      line-height: 2rem;
+      font-size: 1.3rem;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+      color: #000;
+    }
+
+    h1 {
+      font-weight: normal;
+      line-height: 2.8rem;
+      font-size: 2.5rem;
+      letter-spacing: -1px;
+      color: black;
+    }
+
+    p { font-family: monospace; }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto 40px;
+      overflow: hidden;
+    }
+
+    section {
+      margin: 0 auto 2rem;
+      padding: 1rem 0 0;
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 500px) {
+      h1 { font-size: 2rem; }
+
+      .version { font-size: 1.1rem; }
+    }
+
+    .welcome {
+      width: 600px;
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <section>
+      <h1>Captain <%= @sea_shanty[:captain_name] %></h1>
+      <h3>Aboard the HMS <%= @sea_shanty[:ship_name] %></h3>
+      <h3>Demands you sing</h3>
+      <p>
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/<%= @sea_shanty[:shanty] %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </p>
+      <img src=https://ph-files.imgix.net/d224001c-e5b7-4e51-95f6-8d692887d14b?auto=format&auto=compress&codec=mozjpeg&cs=strip&w=773&h=380&fit=max&dpr=1>
+    </section>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,2 @@
+module SeaShantiesHelper
+end
